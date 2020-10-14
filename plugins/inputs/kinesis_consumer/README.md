@@ -38,6 +38,9 @@ and creates metrics using one of the supported [input data formats][].
   ## Shard iterator type (only 'TRIM_HORIZON' and 'LATEST' currently supported)
   # shard_iterator_type = "TRIM_HORIZON"
 
+  ## Records in the stream are aggregated and need deaggregation
+  # aggregated_records = false
+
   ## Maximum messages to read from the broker that have not been written by an
   ## output.  For best throughput set based on the number of metrics within
   ## each message and the size of the output's metric_batch_size.
